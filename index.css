@@ -1,0 +1,40 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    text-align: center;
+}
+
+nav {
+    position: fixed;
+    top:0;
+    left:0;
+    right:0;
+    background-color: grey;
+    height:75px;
+}
+
+header {
+    padding: 75px;
+}
+
+.bio {
+    height: 300px;
+    background-color: #DDDDDD;
+}
+
+.projects {
+    height: 300px;
+    background-color: #DCDCDC;
+}
+
+.contact {
+    height: 200px;
+    background-color: #DCDCDC;
+}
+
+footer {
+    background-color: grey;
+}
