@@ -4,27 +4,63 @@
         <title>Steven Kang - Developer</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" type="text/css" href="index.css">
+        <link href="https://fonts.googleapis.com/css?family=Rubik&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Karla&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="//code.jquery.com/jquery.min.js"></script>
+        <script src="index.js"></script>
     </head>
 
 <body>
-    <nav role="navigation">Nav</nav>
+    <nav role="navigation">
+        <div class="container">
+            <p>STEVEN KANG</p>
+            <div class="leftSideLinks">
+                    <ul class="outerLinks">
+                        <li><a class="githubLink" href="https://github.com/skang28" target="_blank"><img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png"></a></li>
+                        <li><a class="linkedinLink" href="www.linkedin.com/in/stevenkangj" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png"></a></li>
+                    </ul>
+            </div>
+            <div class="rightSideLinks">
+                <ul class="scrollLinks">
+                    <li><a href="#bio">Bio</a></li>
+                    <li><a href="#projects">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="menu-toggle">
+                <a href="javascript:void(0);" class="icon"><i class="fa fa-bars"></i></a>
+            </div>
+        </div>
+    </nav>
     <main role="main">
         <header role="banner">
-            <h1>Steven Kang Headline...</h1>
+            <h1>Hello! I'm Steven.</h1>
+            <p>I'm a full stack web developer. Let's create.</p>
         </header>
-        <section class ="bio">
-            <h2>Bio</h2>
-        </section>
+        <div class ="bio" id="bio">
+            <p>I am determined to create useful content for people to enjoy in every setting/space.</p> 
+            <p>I get along with HTML, CSS, Javascript, and jQuery.</p>
+            <p>When I'm not coding, I'm playing video games, looking for the next restaurant to try, or with my thoughts at the gym.</p>
+            <p>My mindset consists of a constant drive to learn, to challenge myself, and to achieve.</p> 
+            <p>Web development is not exempt from this attitude. Chasing the next problem to solve.</p>
+        </div>
 
-        <section class="projects">
-            <h2>Projects</h2>
-        </section>
+        <div class="projects" id="projects">
+            <h2>Some of my Projects</h2>
+            <h3>Marvel Superhero Quiz App</h3>
+            <img src="portfolio_project_pic_2.jpg" alt="Screenshot of Marvel Quiz App Project" class="portfolioPic">
+            <br><p>This quiz app is an interactive way of testing individuals' knowledge of Marvel's infamous superheroes.</p>
+            <a href="https://skang28.github.io/Marvel-Superhero-Quiz-App/" target="_blank">Live |</a>
+            <a href="https://github.com/skang28/Marvel-Superhero-Quiz-App.git" target="_blank">Code</a>
+        </div>
 
-        <section class="contact">
+        <div class="contact" id="contact">
             <h2>Contact</h2>
-        </section>
+            <p>Want to collaborate? I'm currently available to work on a project. <a href="mailto: stevenkangj@gmail.com">Email me,</a> and let's talk. </p>
+        </div>
 
-        <footer>copyright</footer>
+        <footer>&copy Steven Kang 2019</footer>
     </main>
 </body>
 </html>
