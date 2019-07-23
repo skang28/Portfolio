@@ -2,10 +2,10 @@ $(function() {
 
 $('.menu-toggle').click(function(event) {
     event.preventDefault();
-    $('.rightSideLinks').toggleClass('hamburger')
+    $('.navigation').toggleClass('hamburger')
 });
 
-$('.scrollLinks').on('click','a',function(event) { 
-    $('html, body').animate({ scrollTop: $('.'+$(event.currentTarget).data().scrollTarget).position().top }, 500); });
+$('.rightLinks').on('click','a',function(event) { 
+    $('html, body').animate({ scrollTop: $('.'+$(event.currentTarget).data().scrollTarget).position().top - 60 }, 500); });
 
 });

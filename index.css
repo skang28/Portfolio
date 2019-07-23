@@ -45,7 +45,7 @@ nav {
 nav p {
     float: left;
     font-weight: bold;
-    margin-top: 20px;
+    margin-top: 5px;
     margin-left: 50px;
     color: white;
 }
@@ -54,22 +54,20 @@ nav a {
     color: white;
 }
 
-li {
+nav li {
     list-style: none;
     display: inline-block;
 }
 
-.scrollLinks {
+.rightLinks {
     float: right;
     margin-right: 50px;
-}
-
-.scrollLinks li {
     margin-left: 15px;
 }
 
-.leftSideLinks {
+.leftLinks {
    float: left;
+   margin-left: 15px;
 }
 
 ul img {
@@ -150,10 +148,6 @@ footer {
 
 @media only screen and (max-width: 850px) {
 
-    nav p, li {
-        font-size: 10px;
-    }
-
     header {
         width: 100%;
         height: 300px;
@@ -192,19 +186,21 @@ footer {
         font-size: 10px;
     }
 
+    nav p, li {
+        font-size: 10px;
+    }
+
     .icon {
         float: right;
         display: block;
     }
 
-    .rightSideLinks {
+    nav li {
         display: none;
     }
 
-    .hamburger {
-        display: block;
-        float: right;
-    }
+
+
 
 }
 
