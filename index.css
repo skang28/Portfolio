@@ -199,6 +199,12 @@ footer {
         display: none;
     }
 
+    .leftLinks.hamburger .rightLinks.hamburger{
+        float: none;
+        display: block;
+        text-align: right;
+    }
+
 
 
 

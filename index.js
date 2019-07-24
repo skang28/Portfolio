@@ -2,7 +2,7 @@ $(function() {
 
 $('.menu-toggle').click(function(event) {
     event.preventDefault();
-    $('.navigation').toggleClass('hamburger')
+    $('.leftLinks','.rightLinks').toggleClass('hamburger')
 });
 
 $('.rightLinks').on('click','a',function(event) { 
