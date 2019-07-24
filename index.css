@@ -97,6 +97,7 @@ a {
 
 a:hover {
     color: red;
+    cursor: pointer;
 }
 
 
@@ -199,10 +200,24 @@ footer {
         display: none;
     }
 
-    .leftLinks.hamburger .rightLinks.hamburger{
-        float: none;
+    ul.hamburger li{
         display: block;
+        float: none;
         text-align: right;
+    }
+
+    ul.hamburger {
+        padding: 0;
+        margin-top: 50px;
+    }
+
+    ul.hamburger li.rightLinks {
+        margin-right: 10px;
+    }
+
+
+    nav.hamburger {
+        height: 150px;
     }
 
 
