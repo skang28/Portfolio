@@ -1,6 +1,10 @@
 
 * {
-    box-sizing: border-box;
+    box-sizing: border-box;;
+}
+
+html {
+    background-color: #ECECEB;
 }
 
 body {
@@ -9,77 +13,73 @@ body {
 
 h1 {
     font-family: 'Rubik', sans-serif; 
-    font-size: 48px;
+    font-size: 60px;
 }
 
 h2 {
     font-family: 'Rubik', sans-serif;
-    font-size: 30px;
+    font-size: 46px;
+    color: #265B8B;
 }
 
 h3 {
     font-family: 'Karla', sans-serif;
-    font-size: 20px;
-    color: #0047b3;
+    font-size: 26px;
+    color: #265B8B;
     ;
 }
 
 p {
     font-family: 'Karla', sans-serif;
-    font-size: 16px;
-    color: black;
+    font-size: 1.3em;
+    color: #1181C8;
     font-weight: bold;
 }
 
 nav {
-    background-color: black;
+    background-color: #265B8B;
     height:60px;
-    color: #666666;
+    color: white;
     position: fixed;
     top:0;
     left:0;
     right:0;
     width: 100%;
+    display: flex;
+    justify-content: space-between;
 }
 
 nav p {
-    float: left;
     font-weight: bold;
-    margin-top: 5px;
-    margin-left: 50px;
+    margin-left: 1em;
     color: white;
+    text-align: left;
+    margin-top:1.25em;
+    font-size: 1em;
 }
 
 nav a {
     color: white;
+    font-size: 1em;
+    font-weight: bold;
+}
+
+nav ul {
+    margin-bottom: 5em;
+    display: flex;
+    flex-direction: row-reverse;
+    margin-top: 1.25em;
 }
 
 nav li {
     list-style: none;
-    display: inline-block;
-}
-
-.rightLinks {
-    float: right;
-    margin-right: 50px;
-    margin-left: 15px;
-}
-
-.leftLinks {
-   float: left;
-   margin-left: 15px;
-}
-
-ul img {
-    width: 25px;
-    height: 25px;
-    margin-right: 10px;
+    margin-right: 1em;
 }
 
 .menu-toggle {
     position: absolute;
     padding: 0.8 em;
-    top: 1.5em;
+    top: 1em;
     right: 1em;
     cursor: pointer;
 }
@@ -90,7 +90,7 @@ ul img {
 
 a {
     text-decoration: none;
-    color: #666666;
+    color: #FD6F7A;
     font-family: 'Rubik', sans-serif; 
     font-weight: bold;
 }
@@ -100,18 +100,22 @@ a:hover {
     cursor: pointer;
 }
 
-
 header {
     padding: 50px;
     margin-right: 800px;
     margin-top: 100px;
-    margin-bottom: 200px;
+    margin-bottom: 8.5em;
+}
+
+header h1 {
+    color: #265B8B;
+    margin-bottom: 0.3em;
 }
 
 header p {
-    margin-top:10 px;
-    font-size: 20px;
-    color: #0047b3;
+    margin-top:0.6em;
+    font-size: 30px;
+    color: #265B8B;
     font-weight: bold;
 }
 .bio {
@@ -121,24 +125,34 @@ header p {
 
 .bio p {
     margin: 0;
-    color: black;
+    color: #1181C8;
     font-weight: bold;
-    font-size: 20px;
+    font-size: 28px;
 }
 
 .projects h2 {
-    margin-bottom: 100px;
+    margin-bottom: 0.8em;
 }
 
+.projects {
+    margin-bottom: 15em;
+}
 
-.contact {
-    margin-top: 100px;
-    margin-bottom: 200px;
+.projects a {
+    font-size: 1.3em;
 }
 
 footer {
-    font-size: 14px;
+    font-size: 1.0em;
     font-family: 'Karla', sans-serif;
+    height: 50em;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.copyright {
+    margin-top: 40em;
+    font-size: 1em;
 }
 
 .portfolioPic {
@@ -146,6 +160,35 @@ footer {
     height: auto;
 }
 
+.flexContainer {
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 20em;
+    margin-left: 20em;
+    margin-right: 20em;
+    width: 80%;
+}
+
+.rightContainer {
+    margin-right: 20em;
+}
+
+.leftContainer {
+    width: 50%;
+}
+
+footer img {
+    width: 5em;
+    height: 5em;
+    margin-right: 2em;
+}
+
+footer ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+}
 
 @media only screen and (max-width: 850px) {
 
@@ -160,15 +203,15 @@ footer {
     }
 
     .bio p {
-        font-size: 14px;
+        font-size: 1.2em;
     }
 
     .bio {
-        height: 300px;
+        height: 25em;
     }
 
     h2 {
-        font-size: 24px;
+        font-size: 2em;
     }
 
     .projects h2, .bio h2 {
@@ -176,19 +219,62 @@ footer {
     }
 
     h3 {
-        font-size: 18px;
+        font-size: 1.5em;
     }
 
-    .projects p, .contact p {
+    .projects p {
+        font-size: 1em;
+    }
+
+    .projects a {
+        font-size: 1em;
+    }
+    
+    .contact p {
         font-size: 14px;
     }
     
-    footer {
-        font-size: 10px;
+    .leftContainer p {
+        font-size: 1.2em;
     }
 
-    nav p, li {
-        font-size: 10px;
+    footer img {
+        width: 3.5em;
+        height: 3.5em;
+        margin-right: 2em;
+        margin-top: 1em;
+    }
+
+    footer {
+        height: 20em;
+    }
+
+    .flexContainer {
+        margin-left: 1em;
+        margin-right: 1em;
+        width: 100%;
+    }
+
+    .rightContainer {
+        margin-right: 3em;
+    }
+
+    .leftContainer {
+        margin-left: 3em;
+        width: 40%;
+    }
+
+    .copyright {
+        margin-top: 30em;
+    }
+
+    nav {
+        height: 3em;
+    }
+
+    nav p {
+        margin-top: 1.2em;
+        font-size: 0.8em;
     }
 
     .icon {
@@ -198,6 +284,7 @@ footer {
 
     nav li {
         display: none;
+        font-size: 0.8em;
     }
 
     ul.hamburger li{
@@ -212,23 +299,18 @@ footer {
     }
 
     ul.hamburger li.rightLinks {
-        margin-right: 10px;
+        margin-right: 2em;
     }
-
 
     nav.hamburger {
-        height: 150px;
+        height: 5em;
     }
-
-
-
-
 }
 
 @media only screen and (min-width: 851px) and (max-width: 1296px) {
 
     nav p, li {
-        font-size: 12px;
+        font-size: 1em;
     }
 
     header {
@@ -238,35 +320,135 @@ footer {
     }
 
     h1 {
-        font-size: 36px;
+        font-size: 4em;
     }
 
     .bio p {
-        font-size: 18px;
+        font-size: 1.5em;
     }
 
     .bio {
         height: 300px;
+        margin-left: 10em;
+        margin-right: 10em;
+        margin-bottom: 5em;
     }
 
     h2 {
-        font-size: 24px;
+        font-size: 2.2em;
     }
 
-    .projects h2, .bio h2 {
-        margin-bottom: 50px;
+    .projects h2 {
+        margin-bottom: 0.5em;
     }
 
     h3 {
-        font-size: 18px;
+        font-size: 1.5em;
+        margin-bottom: 0.2em;
     }
 
-    .projects p, .contact p {
-        font-size: 14px;
+    .projects p {
+        font-size: 1.2em;
     }
-    
+
     footer {
-        font-size: 12px;
+        font-size: 0.9em;
     }
 
+    .leftContainer p {
+        margin-bottom:0;
+        margin-top: 0.3em;
+    }
+}
+
+@media only screen and (max-width: 610px) {
+    footer img {
+        width: 3em;
+        height: 3em;
+        margin-right: 1em;
+        margin-top: 2em;
+    }
+
+    .flexContainer {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .leftContainer, .rightContainer {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .leftContainer {
+        width: 100%;
+    }
+
+    .copyright {
+        margin-top: 25em;
+    }
+}
+
+@media only screen and (max-width: 522px) {
+    .leftContainer p {
+        font-size: 1em;
+    }
+
+    .bio p {
+        text-align: left;
+        margin-left: 1em;
+        margin-bottom: 0.5em;
+    }
+}
+
+@media only screen and (max-width: 505px) {
+    .flexContainer {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .leftContainer, .rightContainer {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .leftContainer {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    .flexContainer {
+        margin-top: 14em;
+    }
+
+    .leftContainer {
+        padding-right: 1em;
+    }
+
+    .rightContainer {
+        margin-left: 1em;
+        margin-right: 1.5em;
+    }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 504px) {
+    .bio {
+        height: 30em;
+    }
+
+    h1 {
+        font-size: 3em;
+    }
+
+    header p {
+        font-size: 1.4em;
+    }
+
+    .bio p {
+        font-size: 1.2em;
+    }
+
+    .projects {
+        margin-bottom: 5em;
+    }
 }

@@ -7,7 +7,7 @@ $('.menu-toggle').click(function(event) {
 });
 
 $('.rightLinks').on('click','a',function(event) { 
-    $('html, body').animate({ scrollTop: $('.'+$(event.currentTarget).data().scrollTarget).offset().top - 60}, 500); });
+    $('html').animate({ scrollTop: $('.'+$(event.currentTarget).data().scrollTarget).offset().top - 80}, 500); });
 
 
 });
