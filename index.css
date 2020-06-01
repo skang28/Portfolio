@@ -19,25 +19,25 @@ h1 {
 h2 {
     font-family: 'Rubik', sans-serif;
     font-size: 46px;
-    color: #265B8B;
+    color: #01213B;
 }
 
 h3 {
     font-family: 'Karla', sans-serif;
     font-size: 26px;
-    color: #265B8B;
+    color: #01213B;
     ;
 }
 
 p {
     font-family: 'Karla', sans-serif;
     font-size: 1.3em;
-    color: #1181C8;
+    color: #01213B;
     font-weight: bold;
 }
 
 nav {
-    background-color: #265B8B;
+    background-color: #01213B;
     height:60px;
     color: white;
     position: fixed;
@@ -104,47 +104,48 @@ header {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    padding: 5em;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 5em;
+    padding-top: 7em;
+    color: #01213B;
 }
 
 header h1 {
-    color: #265B8B;
     margin-bottom: 0.3em;
 }
 
 header p {
     margin-top:0.6em;
     font-size: 30px;
-    color: #265B8B;
     font-weight: bold;
+    color: #01213B;
 }
 
 .headerText {
     margin-left: 5em;
+    margin-top: 7em;
 }
 
 .bio {
     text-align: left;
-    width: 60%;
+    width: 50%;
     height: auto;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 5em;
+    margin-bottom: 8em;
 }
 
 .bio p {
     margin: 0;
-    color: #1181C8;
+    color: #01213B;
     font-weight: bold;
     font-size: 28px;
 }
 
 .selfPic {
-    width: 45%;
     height: auto;
-    border-radius: 10px;
+    width: 350px;
 }
 
 .projects h2 {
@@ -166,6 +167,10 @@ header p {
     margin-right: auto;
 }
 
+.technologyUsed {
+    text-align: center;
+}
+
 footer {
     font-size: 1.0em;
     font-family: 'Karla', sans-serif;
@@ -185,21 +190,11 @@ footer {
 }
 
 .flexContainer {
-    display:flex;
-    flex-direction: row;
-    justify-content: space-between;
-    margin-top: 20em;
-    margin-left: 20em;
-    margin-right: 20em;
-    width: 80%;
-}
-
-.rightContainer {
-    margin-right: 20em;
-}
-
-.leftContainer {
-    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 15em;
+    width: 100%;
 }
 
 footer img {
@@ -218,91 +213,65 @@ footer ul {
     margin-bottom: 7em;
 }
 
-@media only screen and (max-width: 850px) {
-
-    header {
-        width: 100%;
-        height: 300px;
-        margin-bottom: 100px;
-    }
-
-    h1 {
-        font-size: 36px;
-    }
-
-    .bio p {
-        font-size: 1.2em;
-    }
-
+@media only screen and (max-width: 1300px) {
     .bio {
-        height: 25em;
+        width: 65%;
+    }
+}
+
+@media only screen and (max-width: 1132px) {
+    header h1 {
+        font-size: 3.5em;
     }
 
-    h2 {
-        font-size: 2em;
-    }
-
-    .projects h2, .bio h2 {
-        margin-bottom: 50px;
-    }
-
-    h3 {
-        font-size: 1.5em;
-    }
-
-    .projects p {
-        font-size: 1em;
-    }
-
-    .projects a {
-        font-size: 1em;
-    }
-    
-    .contact p {
-        font-size: 14px;
-    }
-    
-    .leftContainer p {
-        font-size: 1.2em;
-    }
-
-    footer img {
-        width: 3.5em;
-        height: 3.5em;
-        margin-right: 2em;
-        margin-top: 1em;
-    }
-
-    footer {
-        height: 20em;
-    }
-
-    .flexContainer {
-        margin-left: 1em;
-        margin-right: 1em;
-        width: 100%;
-    }
-
-    .rightContainer {
-        margin-right: 3em;
-    }
-
-    .leftContainer {
-        margin-left: 3em;
-        width: 40%;
+    .selfPic {
+        width: 300px;
     }
 
     .copyright {
-        margin-top: 30em;
+        margin-top: 35em;
+    }
+}
+
+@media only screen and (max-width: 925px) {
+    .bio {
+        width: 75%;
     }
 
+    .bio p {
+        font-size: 1.6em;
+    }
+
+    .headerText {
+        margin-top: 4em;
+        margin-right: 1em;
+    }
+
+    .selfPic {
+        margin-right: 3em;
+    }
+
+    h2 {
+        font-size: 2.6em;
+    }
+
+    .technologyUsed {
+        text-align: left;
+    }
+
+    .copyright {
+        margin:0;
+        padding-top: 35em;
+    }
+}
+
+@media only screen and (max-width: 850px) {
     nav {
         height: 3em;
     }
 
     nav p {
-        margin-top: 1.2em;
-        font-size: 0.8em;
+        margin-top: 1em;
     }
 
     .icon {
@@ -312,7 +281,6 @@ footer ul {
 
     nav li {
         display: none;
-        font-size: 0.8em;
     }
 
     ul.hamburger li{
@@ -333,139 +301,57 @@ footer ul {
     nav.hamburger {
         height: 5em;
     }
-}
 
-@media only screen and (min-width: 851px) and (max-width: 1296px) {
-
-    nav p, li {
-        font-size: 1em;
-    }
-
-    header {
-        width: 100%;
-        height: 300px;
-        margin-bottom: 100px;
-    }
-
-    h1 {
-        font-size: 4em;
-    }
-
-    .bio p {
-        font-size: 1.5em;
-    }
-
-    .bio {
-        height: 300px;
-        margin-left: 10em;
-        margin-right: 10em;
-        margin-bottom: 5em;
-    }
-
-    h2 {
-        font-size: 2.2em;
-    }
-
-    .projects h2 {
-        margin-bottom: 0.5em;
-    }
-
-    h3 {
-        font-size: 1.5em;
-        margin-bottom: 0.2em;
-    }
-
-    .projects p {
-        font-size: 1.2em;
-    }
-
-    footer {
-        font-size: 0.9em;
-    }
-
-    .leftContainer p {
-        margin-bottom:0;
-        margin-top: 0.3em;
-    }
-}
-
-@media only screen and (max-width: 610px) {
-    footer img {
-        width: 3em;
-        height: 3em;
-        margin-right: 1em;
+    .headerText {
         margin-top: 2em;
     }
 
-    .flexContainer {
-        display: flex;
-        flex-direction: column;
+    header h1 {
+        font-size: 2.7em;
     }
 
-    .leftContainer, .rightContainer {
-        margin-left: auto;
-        margin-right: auto;
-    }
-
-    .leftContainer {
-        width: 100%;
-    }
-
-    .copyright {
-        margin-top: 25em;
+    .portfolioPic {
+        max-width: 70%;
     }
 }
 
-@media only screen and (max-width: 522px) {
-    .leftContainer p {
-        font-size: 1em;
+@media only screen and (max-width: 750px) {
+    header h1 {
+        font-size: 2.5em;
+    }
+
+    header p {
+        font-size: 1.8em;
     }
 
     .bio p {
-        text-align: left;
-        margin-left: 1em;
-        margin-bottom: 0.5em;
+        font-size: 1.5em;
+    }
+
+    .headerText {
+        margin-top: 4em;
+    }
+
+    .selfPic {
+        width: 250px;
+    }
+
+    h2 {
+        font-size: 2.1em;
+    }
+
+    .appDescription {
+        font-size: 0.9em;
+    }
+
+    .projects a {
+        font-size: 1em;
     }
 }
 
-@media only screen and (max-width: 505px) {
-    .flexContainer {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .leftContainer, .rightContainer {
-        margin-left: auto;
-        margin-right: auto;
-    }
-
-    .leftContainer {
-        width: 100%;
-    }
-}
-
-@media only screen and (max-width: 320px) {
-    .flexContainer {
-        margin-top: 14em;
-    }
-
-    .leftContainer {
-        padding-right: 1em;
-    }
-
-    .rightContainer {
-        margin-left: 1em;
-        margin-right: 1.5em;
-    }
-}
-
-@media only screen and (min-width: 320px) and (max-width: 504px) {
-    .bio {
-        height: 30em;
-    }
-
-    h1 {
-        font-size: 3em;
+@media only screen and (max-width: 650px) {
+    header h1 {
+        font-size: 2.4em;
     }
 
     header p {
@@ -476,7 +362,178 @@ footer ul {
         font-size: 1.2em;
     }
 
-    .projects {
-        margin-bottom: 5em;
+    .headerText {
+        margin-top: 4em;
+        margin-left: 2em;
+    }
+
+    .selfPic {
+        width: 225px;
+    }
+
+    h2 {
+        font-size: 2em;
+    }
+
+    .appDescription {
+        font-size: 0.8em;
+    }
+
+    .projects a {
+        font-size: 0.9em;
+    }
+}
+
+@media only screen and (max-width: 498px) {
+    .selfPic {
+        width: 190px;
+    }
+
+    .headerText {
+        margin-top: 1em;
+        margin-left: 2em;
+    }
+
+    h2 {
+        font-size: 1.9em;
+    }
+
+    .portfolioPic {
+        max-width: 75%;
+    }
+
+    .appDescription {
+        font-size: 0.65em;
+    }
+
+    .projects a {
+        font-size: 0.7em;
+    }
+
+    footer {
+        font-size: 0.7em;
+    }
+
+    footer img {
+        width: 4em;
+        height: 4em;
+    }
+
+    nav li {
+        font-size: 0.8em;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    footer img {
+        width: 4em;
+        height: 4em;
+    }
+}
+
+@media only screen and (max-width: 420px) {
+    .selfPic {
+        width: 150px;
+        padding-top: 2em;
+    }
+
+    header {
+        padding-top: 4em;
+    }
+
+    .headerText {
+        margin-left: 2em;
+        margin-top: 2em;
+    }
+
+    header h1 {
+        font-size: 2.2em;
+    }
+
+    header p {
+        font-size: 1.2em;
+    }
+
+    .bio p {
+        font-size: 1em;
+    }
+
+    nav p {
+        font-size: 0.9em;
+        margin-top: 1.2em;
+    }
+
+    nav li {
+        font-size: 0.7em;
+    }
+
+    h2 {
+        font-size: 1.7em;
+    }
+
+    h3 {
+        font-size: 1.4em;
+    }
+
+    footer {
+        font-size: 0.7em;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    .selfPic {
+        width: 125px;
+        padding-top: 3em;
+    }
+
+    header {
+        padding-top: 3em;
+    }
+
+    .headerText {
+        margin-left: 2em;
+        margin-top: 1em;
+    }
+
+    header h1 {
+        font-size: 1.8em;
+    }
+
+    header p {
+        font-size: 1em;
+    }
+
+    .bio p {
+        font-size: 0.9em;
+    }
+
+    nav p {
+        font-size: 0.75em;
+        margin-top: 1.5em;
+    }
+
+    h2 {
+        font-size: 1.5em;
+    }
+
+    h3 {
+        font-size: 1.3em;
+    }
+
+    .appDescription {
+        font-size: 0.5em;
+    }
+
+    .projects a {
+        font-size: 0.6em;
+    }
+
+    footer {
+        font-size: 0.6em;
+    }
+
+    footer img {
+        width: 3.5em;
+        height: 3.5em;
     }
 }
