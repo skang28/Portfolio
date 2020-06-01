@@ -101,10 +101,12 @@ a:hover {
 }
 
 header {
-    padding: 50px;
-    margin-right: 800px;
-    margin-top: 100px;
-    margin-bottom: 8.5em;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 5em;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 header h1 {
@@ -118,9 +120,18 @@ header p {
     color: #265B8B;
     font-weight: bold;
 }
+
+.headerText {
+    margin-left: 5em;
+}
+
 .bio {
-    text-align: center;
-    height: 500px;
+    text-align: left;
+    width: 60%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 5em;
 }
 
 .bio p {
@@ -128,6 +139,12 @@ header p {
     color: #1181C8;
     font-weight: bold;
     font-size: 28px;
+}
+
+.selfPic {
+    width: 45%;
+    height: auto;
+    border-radius: 10px;
 }
 
 .projects h2 {
@@ -140,6 +157,13 @@ header p {
 
 .projects a {
     font-size: 1.3em;
+}
+
+.appDescription {
+    text-align: left;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 footer {
@@ -156,7 +180,7 @@ footer {
 }
 
 .portfolioPic {
-    max-width:90%;
+    max-width:60%;
     height: auto;
 }
 
@@ -190,7 +214,7 @@ footer ul {
     flex-direction: row;
 }
 
-.project1 {
+.project1, .project2 {
     margin-bottom: 7em;
 }
 
