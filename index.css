@@ -1,6 +1,6 @@
 
 * {
-    box-sizing: border-box;;
+    box-sizing: border-box;
 }
 
 html {
@@ -9,6 +9,9 @@ html {
 
 body {
     text-align: center;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
 }
 
 h1 {
@@ -36,17 +39,17 @@ p {
     font-weight: bold;
 }
 
+#p2, #p3 {
+    display: none;
+}
+
 nav {
+    float: left;
     background-color: #01213B;
-    height:60px;
-    color: white;
-    position: fixed;
-    top:0;
-    left:0;
-    right:0;
-    width: 100%;
+    width: 30%;
+    height: auto;
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
 }
 
 nav p {
@@ -60,14 +63,13 @@ nav p {
 
 nav a {
     color: white;
-    font-size: 1em;
-    font-weight: bold;
+    font-size: 1.8em;
+    font-weight: 200;
 }
 
 nav ul {
     margin-bottom: 5em;
-    display: flex;
-    flex-direction: row-reverse;
+    display: block;
     margin-top: 1.25em;
 }
 
@@ -100,31 +102,10 @@ a:hover {
     cursor: pointer;
 }
 
-header {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 5em;
-    padding-top: 7em;
-    color: #01213B;
-}
-
-header h1 {
-    margin-bottom: 0.3em;
-}
-
-header p {
-    margin-top:0.6em;
-    font-size: 30px;
-    font-weight: bold;
-    color: #01213B;
-}
-
-.headerText {
-    margin-left: 5em;
-    margin-top: 7em;
+main {
+    height: 100%;
+    width: 100%;
+    float: right;
 }
 
 .bio {
@@ -143,9 +124,13 @@ header p {
     font-size: 28px;
 }
 
+.bioText {
+    margin-bottom: 5em;
+}
+
 .selfPic {
     height: auto;
-    width: 350px;
+    width: 200px;
 }
 
 .projects h2 {
@@ -195,12 +180,6 @@ footer {
     align-items: center;
     margin-top: 15em;
     width: 100%;
-}
-
-footer img {
-    width: 5em;
-    height: 5em;
-    margin-right: 2em;
 }
 
 footer ul {

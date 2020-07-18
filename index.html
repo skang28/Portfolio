@@ -8,35 +8,31 @@
         <link href="https://fonts.googleapis.com/css?family=Rubik&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Karla&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <script src="https://code.jquery.com/jquery.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <script src="index.js"></script>
     </head>
 
 <body>
-    <nav>
-        <p>STEVEN KANG</p>
+    <nav class="nav">
+        <div class="selfPicture">
+            <img src="pictures/profile-pic-circle.png" alt="picture of myself" class="selfPic">
+        </div>
         <ul>
+            <li class="rightLinks"><a id = "1" class = "active" href="#">Bio</a></li>
+            <li class="rightLinks"><a id = "2" href="#">Projects</a></li>
+            <li class="rightLinks"><a id = "3" href="#">Contact</a></li>
             <li class="rightLinks"><a href="kang_steven_resume.pdf" download>Resume</a></l>
-            <li class="rightLinks"><a data-scroll-target="contact">Contact</a></li>
-            <li class="rightLinks"><a data-scroll-target="projects">Projects</a></li>
-            <li class="rightLinks"><a data-scroll-target="bioHeader">Bio</a></li>
          </ul>
         <div class="menu-toggle">
             <a href="javascript:void(0);" class="icon"><i class="fa fa-bars"></i></a>
         </div>
     </nav>
-    <header id="bioHeader" class="bioHeader">
-        <div class="headerText">
-            <h1>Hello! I'm Steven.</h1>
-            <p>I'm a full stack web developer. Let's create.</p>
-        </div>
-        <div class="selfPicture">
-            <img src="pictures/profile-pic-circle.png" alt="picture of myself" class="selfPic">
-        </div>
-    </header>
-
     <main>
-        <section class ="bio" id="bio">
+        <section class ="bio pactive" id="p1">
+            <div class="bioText">
+                <h1>Hello! I'm Steven.</h1>
+                <p>I'm a Full Stack Developer. Let's create.</p>
+            </div>
             <p>
                 I am determined to create useful and enjoyable content for people to enjoy in every setting/space.
                 I get along with Javascript, React, Node.js, and much more! When I'm not coding, I'm playing video games,
@@ -46,7 +42,7 @@
             </p>
         </section>
 
-        <section class="projects" id="projects">
+        <section class="projects pactive" id="p2">
             <h2>Some of my Projects</h2>
             <div class="project1">
                 <h3>What to Watch</h3>
@@ -103,36 +99,36 @@
                 <a href="https://github.com/skang28/just-a-calendar-server.git" target="_blank">Back-end Code</a>
             </div>
         </section>
+        <section class = "contact pactive" id = "p3">
+            <div class="flexContainer">
+                <div class="contactText">
+                    <p>Want to collaborate? I'm currently available to work on a project.</p>
+                    <p>Feel free to contact me through these links.</p>
+                </div>
+                <div class="contactLinks">
+                    <ul>
+                        <li class="emailLink">
+                            <a href="mailto:stevenkangj@gmail.com">
+                                <img src="https://image.flaticon.com/icons/svg/217/217873.svg" alt="envelope that is an email icon">
+                            </a>
+                        </li>
+                        <li class="githubLink">
+                            <a href="https://github.com/skang28" target="_blank">
+                                <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="github logo">
+                            </a>
+                        </li>
+                        <li class="linkedinLink">
+                            <a href="https://www.linkedin.com/in/stevenkangj" target="_blank">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png" alt="linkedin logo">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <p class="copyright">&copy; Steven Kang 2019</p>
+        </footer>
     </main>
-
-    <footer class="contact">
-        <div class="flexContainer">
-            <div class="contactText">
-                <p>Want to collaborate? I'm currently available to work on a project.</p>
-                <p>Feel free to contact me through these links.</p>
-            </div>
-            <div class="contactLinks">
-                <ul>
-                    <li class="emailLink">
-                        <a href="mailto:stevenkangj@gmail.com">
-                            <img src="https://image.flaticon.com/icons/svg/217/217873.svg" alt="envelope that is an email icon">
-                        </a>
-                    </li>
-                    <li class="githubLink">
-                        <a href="https://github.com/skang28" target="_blank">
-                            <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="github logo">
-                        </a>
-                    </li>
-                    <li class="linkedinLink">
-                        <a href="https://www.linkedin.com/in/stevenkangj" target="_blank">
-                            <img src="https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png" alt="linkedin logo">
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-        <p class="copyright">&copy; Steven Kang 2019</p>
-    </footer>
-
 </body>
 </html>
