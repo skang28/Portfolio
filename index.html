@@ -5,8 +5,7 @@
         <title>Steven Kang - Developer</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" type="text/css" href="index.css">
-        <link href="https://fonts.googleapis.com/css?family=Rubik&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css?family=Karla&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Montserrat:wght@100&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <script src="index.js"></script>
@@ -17,8 +16,9 @@
         <div class="selfPicture">
             <img src="pictures/profile-pic-circle.png" alt="picture of myself" class="selfPic">
         </div>
-        <ul>
-            <li class="rightLinks"><a id = "1" class = "active" href="#">Bio</a></li>
+        <p  class="displayName">STEVEN KANG</p>
+        <ul class="navLinks">
+            <li class="rightLinks"><a id = "1" class = "active" href="#">About Me</a></li>
             <li class="rightLinks"><a id = "2" href="#">Projects</a></li>
             <li class="rightLinks"><a id = "3" href="#">Contact</a></li>
             <li class="rightLinks"><a href="kang_steven_resume.pdf" download>Resume</a></l>
@@ -29,11 +29,11 @@
     </nav>
     <main>
         <section class ="bio pactive" id="p1">
-            <div class="bioText">
+            <div class="bioTitle">
                 <h1>Hello! I'm Steven.</h1>
                 <p>I'm a Full Stack Developer. Let's create.</p>
             </div>
-            <p>
+            <p class="bioText">
                 I am determined to create useful and enjoyable content for people to enjoy in every setting/space.
                 I get along with Javascript, React, Node.js, and much more! When I'm not coding, I'm playing video games,
                 looking for the next restaurant to try, or taking a break from the world at the gym.
@@ -44,41 +44,6 @@
 
         <section class="projects pactive" id="p2">
             <h2>Some of my Projects</h2>
-            <div class="project1">
-                <h3>What to Watch</h3>
-                <img src="pictures/what-to-watch-app.png" alt="Screenshot of Marvel Quiz App Project" class="portfolioPic">
-                <br>
-                <div class="appDescription">
-                    <p>
-                        This app is for the user looking for something to watch, but just can't choose.
-                        Users can select the category movie or TV show and the app will give you a random selection to watch!
-                    </p>
-                    <p class="technologyUsed">
-                        Technology used: HTML, CSS, Javascript, jQuery
-                    </p>
-                </div>
-                <a href="https://skang28.github.io/What-to-watch/" target="_blank">Live |</a>
-                <a href="https://github.com/skang28/What-to-watch.git" target="_blank">Code</a>
-            </div>
-            <div class="project2">
-                <h3>Honest Takes</h3>
-                <img src="pictures/honest-takes-app.png" alt="screenshot of honest takes app" class="portfolioPic">
-                <br>
-                <div class="appDescription">
-                    <p>
-                        Honest Takes is an online forum for open and anonymous discussion centered around sports!
-                        This app is for users who enjoy the idea of anonymity, but still want to talk to others.
-                        Every day a new topic about what's buzzing in sports will appear, and users create their own posts
-                        to respond to the topic or comment on other people's posts.
-                    </p>
-                    <p class="technologyUsed">
-                        Technology used: HTML, CSS, Javascript, React, Node.js, Express, PostgreSQL
-                    </p>
-                </div>
-                <a href="https://honest-takes-app.skang28.now.sh/" target="_blank">Live |</a>
-                <a href="https://github.com/skang28/HonestTakes-app.git" target="_blank">Front-end Code |</a>
-                <a href="https://github.com/skang28/honest-takes-server.git" target="_blank">Back-end Code</a>
-            </div>
             <div class="project3">
                 <h3>Just a Calendar</h3>
                 <img src="pictures/just-a-calendar-app.png" alt="screenshot of just a calendar app" class="portfolioPic">
@@ -98,6 +63,41 @@
                 <a href="https://github.com/skang28/just-a-calendar-app.git" target="_blank">Front-end Code |</a>
                 <a href="https://github.com/skang28/just-a-calendar-server.git" target="_blank">Back-end Code</a>
             </div>
+            <div class="project2">
+                <h3>Honest Takes</h3>
+                <img src="pictures/honest-takes-app.png" alt="screenshot of honest takes app" class="portfolioPic">
+                <br>
+                <div class="appDescription">
+                    <p>
+                        Honest Takes is an online forum for open and anonymous discussion centered around sports!
+                        This app is for users who enjoy the idea of anonymity, but still want to talk to others.
+                        Every day a new topic about what's buzzing in sports will appear, and users create their own posts
+                        to respond to the topic or comment on other people's posts.
+                    </p>
+                    <p class="technologyUsed">
+                        Technology used: HTML, CSS, Javascript, React, Node.js, Express, PostgreSQL
+                    </p>
+                </div>
+                <a href="https://honest-takes-app.skang28.now.sh/" target="_blank">Live |</a>
+                <a href="https://github.com/skang28/HonestTakes-app.git" target="_blank">Front-end Code |</a>
+                <a href="https://github.com/skang28/honest-takes-server.git" target="_blank">Back-end Code</a>
+            </div><div class="project1">
+                <h3>What to Watch</h3>
+                <img src="pictures/what-to-watch-app.png" alt="Screenshot of Marvel Quiz App Project" class="portfolioPic">
+                <br>
+                <div class="appDescription">
+                    <p>
+                        This app is for the user looking for something to watch, but just can't choose.
+                        Users can select the category movie or TV show and the app will give you a random selection to watch!
+                        It even gives you an iMDb rating, and links to iMDb and Rotten Tomatoes for easy access to reviews.
+                    </p>
+                    <p class="technologyUsed">
+                        Technology used: HTML, CSS, Javascript, jQuery
+                    </p>
+                </div>
+                <a href="https://skang28.github.io/What-to-watch/" target="_blank">Live |</a>
+                <a href="https://github.com/skang28/What-to-watch.git" target="_blank">Code</a>
+            </div>
         </section>
         <section class = "contact pactive" id = "p3">
             <div class="flexContainer">
@@ -106,23 +106,23 @@
                     <p>Feel free to contact me through these links.</p>
                 </div>
                 <div class="contactLinks">
-                    <ul>
-                        <li class="emailLink">
+                    <div>
+                        <div class="emailLink">
                             <a href="mailto:stevenkangj@gmail.com">
                                 <img src="https://image.flaticon.com/icons/svg/217/217873.svg" alt="envelope that is an email icon">
                             </a>
-                        </li>
-                        <li class="githubLink">
+                        </div>
+                        <div class="githubLink">
                             <a href="https://github.com/skang28" target="_blank">
                                 <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="github logo">
                             </a>
-                        </li>
-                        <li class="linkedinLink">
+                        </div>
+                        <div class="linkedinLink">
                             <a href="https://www.linkedin.com/in/stevenkangj" target="_blank">
                                 <img src="https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png" alt="linkedin logo">
                             </a>
-                        </li>
-                    </ul>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
