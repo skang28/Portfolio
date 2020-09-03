@@ -1,6 +1,6 @@
 
 * {
-    box-sizing: border-box;;
+    box-sizing: border-box;
 }
 
 html {
@@ -9,71 +9,66 @@ html {
 
 body {
     text-align: center;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin: 0;
 }
 
 h1 {
-    font-family: 'Rubik', sans-serif; 
-    font-size: 60px;
+    font-family: 'Libre Baskerville', serif;
+    font-size: 40px;
+    color: #01213B;
+    margin:0;
 }
 
 h2 {
-    font-family: 'Rubik', sans-serif;
-    font-size: 46px;
+    font-family: 'Libre Baskerville', serif;
+    font-size: 35px;
     color: #01213B;
 }
 
 h3 {
-    font-family: 'Karla', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-size: 26px;
     color: #01213B;
-    ;
 }
 
 p {
-    font-family: 'Karla', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-size: 1.3em;
     color: #01213B;
     font-weight: bold;
 }
 
-nav {
-    background-color: #01213B;
-    height:60px;
-    color: white;
-    position: fixed;
-    top:0;
-    left:0;
-    right:0;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
+#p2, #p3 {
+    display: none;
 }
 
-nav p {
-    font-weight: bold;
-    margin-left: 1em;
-    color: white;
-    text-align: left;
-    margin-top:1.25em;
-    font-size: 1em;
+nav {
+    float: left;
+    background-color: #01213B;
+    width: 30%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
 }
 
 nav a {
     color: white;
-    font-size: 1em;
-    font-weight: bold;
+    font-size: 1.8em;
+    font-weight: 300;
 }
 
 nav ul {
-    margin-bottom: 5em;
-    display: flex;
-    flex-direction: row-reverse;
-    margin-top: 1.25em;
+    display: block;
+    margin-top: 3em;
+    padding: 0;
 }
 
 nav li {
     list-style: none;
-    margin-right: 1em;
+    margin: 0 auto 0.75em auto;
 }
 
 .menu-toggle {
@@ -84,14 +79,14 @@ nav li {
     cursor: pointer;
 }
 
-.icon {
+.icon, .displayName {
     display: none;
 }
 
 a {
     text-decoration: none;
     color: #FD6F7A;
-    font-family: 'Rubik', sans-serif; 
+    font-family: 'Montserrat', sans-serif;
     font-weight: bold;
 }
 
@@ -100,52 +95,44 @@ a:hover {
     cursor: pointer;
 }
 
-header {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 5em;
-    padding-top: 7em;
-    color: #01213B;
-}
-
-header h1 {
-    margin-bottom: 0.3em;
-}
-
-header p {
-    margin-top:0.6em;
-    font-size: 30px;
-    font-weight: bold;
-    color: #01213B;
-}
-
-.headerText {
-    margin-left: 5em;
-    margin-top: 7em;
+main {
+    min-height: 100vh;
+    width: 100%;
+    float: right;
+    position: relative;
+    padding-bottom: 2.5em;
 }
 
 .bio {
     text-align: left;
-    width: 50%;
-    height: auto;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 8em;
+    position: absolute;
+    top:30%;
+    margin: 0 1em 0 1em;
 }
 
 .bio p {
     margin: 0;
     color: #01213B;
     font-weight: bold;
-    font-size: 28px;
+    font-size: 25px;
+}
+
+.bioTitle {
+    margin-bottom: 5em;
+}
+
+.bioTitle p {
+    font-family: 'Libre Baskerville', serif;
+    font-size: 30px;
+}
+
+.bioText {
+    width: 100%;
 }
 
 .selfPic {
     height: auto;
-    width: 350px;
+    width: 200px;
 }
 
 .projects h2 {
@@ -165,149 +152,127 @@ header p {
     width: 60%;
     margin-left: auto;
     margin-right: auto;
+    font-size: 14px;
 }
 
 .technologyUsed {
     text-align: center;
 }
 
-footer {
-    font-size: 1.0em;
-    font-family: 'Karla', sans-serif;
-    height: 50em;
-    margin-top: 0px;
-    margin-bottom: 0px;
+.project3, .project2 {
+    margin-bottom: 7em;
 }
 
-.copyright {
-    margin-top: 40em;
-    font-size: 1em;
+footer {
+    font-size: 0.7em;
+    font-family: 'Montserrat', sans-serif;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 2.5em;
 }
 
 .portfolioPic {
-    max-width:60%;
+    max-width:70%;
     height: auto;
 }
 
 .flexContainer {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 15em;
+    flex-direction: row;
     width: 100%;
+    justify-content: center;
+    margin: 15em 0 0 0;
 }
 
-footer img {
+.contactText {
+    text-align: left;
+    margin: auto 2em auto 0;
+}
+
+.flexContainer li {
+    list-style: none;
+}
+
+.flexContainer img {
     width: 5em;
     height: 5em;
-    margin-right: 2em;
-}
-
-footer ul {
-    list-style: none;
-    display: flex;
-    flex-direction: row;
-}
-
-.project1, .project2 {
-    margin-bottom: 7em;
-}
-
-@media only screen and (max-width: 1300px) {
-    .bio {
-        width: 65%;
-    }
-}
-
-@media only screen and (max-width: 1132px) {
-    header h1 {
-        font-size: 3.5em;
-    }
-
-    .selfPic {
-        width: 300px;
-    }
-
-    .copyright {
-        margin-top: 35em;
-    }
 }
 
 @media only screen and (max-width: 925px) {
-    .bio {
-        width: 75%;
-    }
-
-    .bio p {
-        font-size: 1.6em;
-    }
 
     .headerText {
         margin-top: 4em;
         margin-right: 1em;
     }
 
-    .selfPic {
-        margin-right: 3em;
-    }
-
     h2 {
         font-size: 2.6em;
+    }
+
+    .selfPic {
+        width: 150px;
     }
 
     .technologyUsed {
         text-align: left;
     }
 
-    .copyright {
-        margin:0;
-        padding-top: 35em;
+    .rightLinks {
+        font-size: 0.7em;
+    }
+
+    .flexContainer {
+        padding: 0 1em 0 1em;
+    }
+
+    .flexContainer img {
+        width: 4em;
+        height: 4em;
     }
 }
 
 @media only screen and (max-width: 850px) {
-    nav {
-        height: 3em;
-    }
-
-    nav p {
-        margin-top: 1em;
-    }
-
-    .icon {
-        float: right;
+    body {
         display: block;
     }
+    
+    nav {
+        height: 3em;
+        width: 100%;
+        display: inline-block;
+    }
 
-    nav li {
+    .selfPic {
         display: none;
     }
 
-    ul.hamburger li{
-        display: block;
-        float: none;
-        text-align: right;
+    .displayName {
+        font-size: 1.2em;
+        color: white;
+        width: auto;
+        height: 100%;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: bold;
+        float: left;
+        display: inherit;
+        margin: 10px 0 0 10px;
     }
 
-    ul.hamburger {
-        padding: 0;
-        margin-top: 50px;
+    nav a {
+        color: white;
     }
 
-    ul.hamburger li.rightLinks {
-        margin-right: 2em;
+    nav ul {
+        display: flex;
+        flex-direction: row;
+        margin: 10px 10px 0 0;
+        float: right;
     }
 
-    nav.hamburger {
-        height: 5em;
-    }
-
-    .headerText {
-        margin-top: 2em;
-    }
-
-    header h1 {
-        font-size: 2.7em;
+    .rightLinks {
+        font-size: 0.7em;
+        margin: 0 0 0 15px;
     }
 
     .portfolioPic {
@@ -316,24 +281,21 @@ footer ul {
 }
 
 @media only screen and (max-width: 750px) {
-    header h1 {
-        font-size: 2.5em;
+    .displayName {
+        font-size: 1em;
+        margin-top: 12px;
     }
 
-    header p {
-        font-size: 1.8em;
+    .rightLinks {
+        font-size: 0.6em;
     }
-
+    
     .bio p {
-        font-size: 1.5em;
+        font-size: 1.4em;
     }
 
     .headerText {
         margin-top: 4em;
-    }
-
-    .selfPic {
-        width: 250px;
     }
 
     h2 {
@@ -347,15 +309,54 @@ footer ul {
     .projects a {
         font-size: 1em;
     }
+
+    .contactText {
+        margin-right: 7px;
+    }
 }
 
 @media only screen and (max-width: 650px) {
-    header h1 {
-        font-size: 2.4em;
+    .icon {
+        float: right;
+        display: block;
     }
 
-    header p {
-        font-size: 1.4em;
+    nav li {
+        display: none;
+    }
+
+    nav ul {
+        clear: both;
+        display: block;
+    }
+
+    ul.hamburger li{
+        display: block;
+    }
+
+    ul.hamburger {
+        padding: 0;
+        position: absolute;
+        top: 45px;
+        right: 0.5px;
+        background-color: #01213B;
+        margin: 0;
+        z-index: 2;
+    }
+
+    ul.hamburger li.rightLinks {
+        margin: 0 2em 2em 2em;
+        font-size: 0.5em;
+    }
+
+    nav.hamburger {
+        height: 3em;
+    }
+
+    .menu-toggle {
+        position: absolute;
+        top: 0.4em;
+        right: 1em;
     }
 
     .bio p {
@@ -381,6 +382,11 @@ footer ul {
 
     .projects a {
         font-size: 0.9em;
+    }
+
+    .flexContainer img {
+        width: 3em;
+        height: 3em;
     }
 }
 
