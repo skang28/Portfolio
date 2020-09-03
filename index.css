@@ -341,6 +341,7 @@ footer {
         right: 0.5px;
         background-color: #01213B;
         margin: 0;
+        z-index: 2;
     }
 
     ul.hamburger li.rightLinks {
